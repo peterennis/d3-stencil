@@ -6,7 +6,10 @@
     "allowUnreachableCode": false,
     "declaration": false,
     "experimentalDecorators": true,
-    "lib": ["dom", "esnext"],
+    "lib": [
+      "dom",
+      "esnext"
+    ],
     "moduleResolution": "node",
     "module": "esnext",
     "target": "es2017",
@@ -16,6 +19,12 @@
     "jsxFactory": "h",
     "skipLibCheck": true
   },
-  "include": ["./**/*", "types/jsx.d.ts"],
-  "exclude": ["docs", "node_modules"]
+  "include": [
+    "./**/*",
+    "types/jsx.d.ts"
+  ],
+  "exclude": [
+    "docs",
+    "node_modules"
+  ]
 }
