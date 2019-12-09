@@ -1,8 +1,8 @@
 {
-  "name": "d3-stencil",
+  "name": "ae-d3-stencil",
   "private": false,
-  "version": "2.2.2",
-  "description": "Charts built with D3 and Stencil. Framework-agnostic, simple.",
+  "version": "2.2.4-beta1",
+  "description": "Charts built with D3 and Stencil. Framework agnostic, simple.",
   "homepage": "https://github.com/edgarordonez/d3-stencil",
   "keywords": [
     "Stencil",
@@ -30,7 +30,7 @@
     "circular": "npx madge -c --extensions ts ./src --ts-config ./tsconfig.json"
   },
   "dependencies": {
-    "d3": "^5.14.1",
+    "d3": "^5.14.2",
     "object-assign-deep": "^0.4.0"
   },
   "devDependencies": {
@@ -42,8 +42,8 @@
     "@stencil/utils": "0.0.5",
     "@types/d3": "^5.7.2",
     "@types/jest": "24.0.23",
-    "@types/puppeteer": "1.20.2",
-    "coveralls": "^3.0.7",
+    "@types/puppeteer": "1.19.0",
+    "coveralls": "^3.0.9",
     "cz-conventional-changelog": "^3.0.2",
     "husky": "^3.1.0",
     "jest": "24.9.0",
@@ -51,6 +51,7 @@
     "madge": "^3.6.0",
     "prettier": "^1.19.1",
     "puppeteer": "1.19.0",
+    "rollup-plugin-node-polyfills": "^0.2.1",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "workbox-build": "4.3.1"
