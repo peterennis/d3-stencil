@@ -3,7 +3,7 @@ import { sass } from '@stencil/sass';
 import nodePolyfills from 'rollup-plugin-node-polyfills';
 
 export const config: Config = {
-  namespace: 'd3-stencil',
+  namespace: 'ae-d3-stencil',
   outputTargets: [{ type: 'dist' }, { type: 'www' }],
   plugins: [
     sass({
