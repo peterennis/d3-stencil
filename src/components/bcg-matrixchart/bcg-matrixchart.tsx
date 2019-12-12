@@ -17,8 +17,8 @@ import {
 import { DEFAULT_GRAPH_DATA_BCG } from '../../shared';
 
 @Component({
-  tag: 'bcg-matrix-chart',
-  styleUrl: 'bcg-matrix-chart.scss',
+  tag: 'bcg-matrixchart',
+  styleUrl: 'bcg-matrixchart.scss',
 })
 export class BGCMatrixChart implements Graph<BcgMatrix[]> {
   @Prop() graphData: GraphData<BcgMatrix[]>;
