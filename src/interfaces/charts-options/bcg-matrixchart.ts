@@ -1,7 +1,7 @@
 import { Axis, Margin } from '../options-types';
 import { Formats } from '../formats';
 
-export type BcgMatrixChart = Partial<{
+export type BcgMatrixchart = Partial<{
   axis: Axis;
   margin: Margin;
   value: Partial<{

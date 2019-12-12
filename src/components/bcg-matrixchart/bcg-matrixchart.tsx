@@ -20,9 +20,9 @@ import { DEFAULT_GRAPH_DATA_BCG } from '../../shared';
   tag: 'bcg-matrixchart',
   styleUrl: 'bcg-matrixchart.scss',
 })
-export class BGCMatrixChart implements Graph<BcgMatrix[]> {
+export class BGCMatrixchart implements Graph<BcgMatrix[]> {
   @Prop() graphData: GraphData<BcgMatrix[]>;
-  @Element() bgcMatrixChartEl: HTMLElement;
+  @Element() bgcMatrixchartEl: HTMLElement;
   graphDataMerged: GraphData<BcgMatrix[]>;
   svg: Selection<any, any, HTMLElement, any>;
   root: Selection<SVGElement, any, HTMLElement, any>;
@@ -48,17 +48,17 @@ export class BGCMatrixChart implements Graph<BcgMatrix[]> {
   }
 
   componentDidLoad() {
-    this.svg = select(this.bgcMatrixChartEl.getElementsByTagName('svg')[0]);
+    this.svg = select(this.bgcMatrixchartEl.getElementsByTagName('svg')[0]);
 
     this.height =
       this.svg.node().getBoundingClientRect().height -
       this.graphDataMerged.bcgMatrixChart.margin.top -
       this.graphDataMerged.bcgMatrixChart.margin.bottom;
 
-    this.tooltipEl = initTooltipIfExists(this.bgcMatrixChartEl);
+    this.tooltipEl = initTooltipIfExists(this.bgcMatrixchartEl);
 
     this.legendEl = initLegendIfExists(
-      this.bgcMatrixChartEl,
+      this.bgcMatrixchartEl,
       this.eventsLegend.bind(this),
     );
 

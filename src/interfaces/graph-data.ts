@@ -6,7 +6,7 @@ import {
   BarChart,
   LineChart,
   LineAnnotationsChart,
-  BcgMatrixChart,
+  BcgMatrixchart,
 } from './charts-options';
 
 export type GraphData<T = number[][]> = Partial<{
@@ -14,7 +14,7 @@ export type GraphData<T = number[][]> = Partial<{
   barChart: BarChart;
   lineChart: LineChart;
   lineAnnotationsChart: LineAnnotationsChart;
-  bcgMatrixChart: BcgMatrixChart;
+  bcgMatrixChart: BcgMatrixchart;
   styles: Styles;
   colors: string[];
   labels: string[] | number[];
