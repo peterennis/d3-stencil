@@ -10,7 +10,7 @@ describe('has-data:', () => {
   const validGraphDataMerged: GraphData<any[]> = {
     labels: ['<5', '5-13', '14-17', '18-24', '25-44', '45-64', '≥65'],
     styles: null,
-    lineAnnotationsChart: {
+    lineAnnotationschart: {
       increaseHeight: 100,
       tickSeparation: '2em',
       annotations: [],
@@ -22,7 +22,7 @@ describe('has-data:', () => {
   const invalidGraphDataMerged: GraphData<any[]> = {
     labels: [],
     styles: null,
-    lineAnnotationsChart: {
+    lineAnnotationschart: {
       increaseHeight: 0,
       tickSeparation: '',
       annotations: [],
