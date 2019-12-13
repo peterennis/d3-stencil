@@ -118,7 +118,7 @@ export const DEFAULT_GRAPH_DATA_ANNOTATIONS_LINE: GraphData = {
       left: 0,
     },
   },
-  lineAnnotationsChart: {
+  lineAnnotationschart: {
     increaseHeight: 100,
     tickSeparation: '2em',
     annotations: [],

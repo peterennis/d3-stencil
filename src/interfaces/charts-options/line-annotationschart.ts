@@ -1,4 +1,4 @@
-export interface LineAnnotationsChart {
+export interface LineAnnotationschart {
   increaseHeight: number;
   tickSeparation: string;
   annotations: number[][];

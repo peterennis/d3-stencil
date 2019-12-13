@@ -5,7 +5,7 @@ import {
   PieChart,
   BarChart,
   LineChart,
-  LineAnnotationsChart,
+  LineAnnotationschart,
   BcgMatrixchart,
 } from './charts-options';
 
@@ -13,7 +13,7 @@ export type GraphData<T = number[][]> = Partial<{
   pieChart: PieChart;
   barChart: BarChart;
   lineChart: LineChart;
-  lineAnnotationsChart: LineAnnotationsChart;
+  lineAnnotationschart: LineAnnotationschart;
   bcgMatrixChart: BcgMatrixchart;
   styles: Styles;
   colors: string[];

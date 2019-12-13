@@ -7,10 +7,10 @@ import { Graph, GraphData } from '../../interfaces';
 import { DEFAULT_GRAPH_DATA_ANNOTATIONS_LINE } from '../../shared';
 
 @Component({
-  tag: 'line-annotations-chart',
-  styleUrl: 'line-annotations-chart.scss'
+  tag: 'line-annotationschart',
+  styleUrl: 'line-annotationschart.scss'
 })
-export class LineAnnotationsChart implements Graph {
+export class LineAnnotationschart implements Graph {
   @Prop() graphData: GraphData;
   @Element() lineAnnotationsChartEl: HTMLElement;
   graphDataMerged: GraphData;
@@ -59,7 +59,7 @@ export class LineAnnotationsChart implements Graph {
     this.svg.style(
       'height',
       this.svg.node().getBoundingClientRect().height +
-      this.graphDataMerged.lineAnnotationsChart.increaseHeight
+      this.graphDataMerged.lineAnnotationschart.increaseHeight
     );
 
     this.drawChart();
@@ -114,7 +114,7 @@ export class LineAnnotationsChart implements Graph {
   repositionXAxis(): void {
     this.root
       .selectAll('.x text')
-      .attr('dy', this.graphDataMerged.lineAnnotationsChart.tickSeparation);
+      .attr('dy', this.graphDataMerged.lineAnnotationschart.tickSeparation);
 
     this.root.selectAll('.x.axis-label').attr('dy', '1em');
   }
@@ -131,7 +131,7 @@ export class LineAnnotationsChart implements Graph {
     const annotations = this.root
       .select('.annotations-group')
       .selectAll('.annotation')
-      .data(this.graphDataMerged.lineAnnotationsChart.annotations)
+      .data(this.graphDataMerged.lineAnnotationschart.annotations)
       .enter()
       .append('g')
       .attr('transform', (_, index) => `translate(${range[index]}, 0)`)
@@ -147,8 +147,8 @@ export class LineAnnotationsChart implements Graph {
       .attr('height', (data: number[]) => (data.length > 1 ? 20 : 17))
       .attr('xlink:href', (data: number[]) =>
         data.length > 1
-          ? this.graphDataMerged.lineAnnotationsChart.imagePathSomeAnnotations
-          : this.graphDataMerged.lineAnnotationsChart.imagePathOneAnnotation
+          ? this.graphDataMerged.lineAnnotationschart.imagePathSomeAnnotations
+          : this.graphDataMerged.lineAnnotationschart.imagePathOneAnnotation
       )
       .on('mouseover', () => this.strokedashAnnotations(true))
       .on('mouseleave', () => this.strokedashAnnotations());

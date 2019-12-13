@@ -13,15 +13,15 @@ export const hasDataIsNotEmpty: HasData<GraphData> = ({
 
 export const hasDataValidOnAnnotationsChart: HasData<GraphData> = ({
   data,
-  lineAnnotationsChart,
+  lineAnnotationschart,
 }): Error | boolean => {
   if (
     !(
       data.length > 0 &&
-      lineAnnotationsChart.increaseHeight > 0 &&
-      lineAnnotationsChart.tickSeparation !== '' &&
-      lineAnnotationsChart.imagePathOneAnnotation !== '' &&
-      lineAnnotationsChart.imagePathSomeAnnotations !== ''
+      lineAnnotationschart.increaseHeight > 0 &&
+      lineAnnotationschart.tickSeparation !== '' &&
+      lineAnnotationschart.imagePathOneAnnotation !== '' &&
+      lineAnnotationschart.imagePathSomeAnnotations !== ''
     )
   ) {
     return THROW_ERROR();
