@@ -63,9 +63,9 @@
     <legend-chart slot="legend" />
   </pie-chart>
 
-  <horizontal-bar-chart>
+  <horizontal-barchart>
     <tooltip-chart slot="tooltip" />
-  </horizontal-bar-chart>
+  </horizontal-barchart>
 
   <line-chart>
     <tooltip-chart slot="tooltip" />
@@ -156,8 +156,8 @@
       labels: ['<5', '5-13', '14-17', '18-24', '25-44', '45-64', '≥65'],
       data: [1250, 200, 20, 140, 600, 3002, 5985],
     };
-    const horizontalBarChartEl = document.querySelector('horizontal-bar-chart');
-    horizontalBarChartEl.graphData = HORIZONTAL_BAR_CHART_DATA;
+    const horizontalBarchartEl = document.querySelector('horizontal-barchart');
+    horizontalBarchartEl.graphData = HORIZONTAL_BAR_CHART_DATA;
 
     const LINE_CHART_DATA = {
       lineChart: {

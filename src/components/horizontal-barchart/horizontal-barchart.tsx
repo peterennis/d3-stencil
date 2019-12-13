@@ -15,12 +15,12 @@ import {
 import { DEFAULT_GRAPH_DATA_BAR } from '../../shared';
 
 @Component({
-  tag: 'horizontal-bar-chart',
-  styleUrl: 'horizontal-bar-chart.scss',
+  tag: 'horizontal-barchart',
+  styleUrl: 'horizontal-barchart.scss',
 })
 export class HorizontalBarChart implements Graph<number[]> {
   @Prop() graphData: GraphData<number[]>;
-  @Element() horizontalBarChartEl: HTMLElement;
+  @Element() horizontalBarchartEl: HTMLElement;
   graphDataMerged: GraphData<number[]>;
   svg: Selection<SVGElement, any, HTMLElement, any>;
   root: Selection<SVGElement, any, HTMLElement, any>;
@@ -39,7 +39,7 @@ export class HorizontalBarChart implements Graph<number[]> {
   }
 
   componentDidLoad() {
-    this.svg = select(this.horizontalBarChartEl.getElementsByTagName('svg')[0]);
+    this.svg = select(this.horizontalBarchartEl.getElementsByTagName('svg')[0]);
 
     this.height =
       this.svg.node().getBoundingClientRect().height -
@@ -112,10 +112,10 @@ export class HorizontalBarChart implements Graph<number[]> {
   }
 
   initSlots() {
-    this.tooltipEl = initTooltipIfExists(this.horizontalBarChartEl);
+    this.tooltipEl = initTooltipIfExists(this.horizontalBarchartEl);
 
     this.legendEl = initLegendIfExists(
-      this.horizontalBarChartEl,
+      this.horizontalBarchartEl,
       this.eventsLegend.bind(this),
     );
   }
