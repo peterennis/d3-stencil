@@ -1,7 +1,7 @@
 {
   "name": "ae-d3-stencil",
   "private": false,
-  "version": "2.2.4-beta5",
+  "version": "2.2.4-beta6",
   "description": "Charts built with D3 and Stencil. Framework agnostic, simple.",
   "homepage": "https://github.com/edgarordonez/d3-stencil",
   "keywords": [
