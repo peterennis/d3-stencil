@@ -12,7 +12,7 @@ import { DEFAULT_GRAPH_DATA_ANNOTATIONS_LINE } from '../../shared';
 })
 export class LineAnnotationschart implements Graph {
   @Prop() graphData: GraphData;
-  @Element() lineAnnotationsChartEl: HTMLElement;
+  @Element() lineAnnotationschartEl: HTMLElement;
   graphDataMerged: GraphData;
   lineChartEl: HTMLLineChartElement;
   svg: Selection<any, any, HTMLLineChartElement, any>;
@@ -45,7 +45,7 @@ export class LineAnnotationschart implements Graph {
   }
 
   lineChartAreReady(): void {
-    this.lineChartEl = this.lineAnnotationsChartEl.getElementsByTagName(
+    this.lineChartEl = this.lineAnnotationschartEl.getElementsByTagName(
       'line-chart'
     )[0];
 
@@ -102,7 +102,7 @@ export class LineAnnotationschart implements Graph {
 
   reSetRoot(): void {
     this.root = select(
-      this.lineAnnotationsChartEl.getElementsByTagName('line-chart')[0]
+      this.lineAnnotationschartEl.getElementsByTagName('line-chart')[0]
         .children[0]
     );
 
