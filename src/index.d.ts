@@ -1,3 +1,4 @@
+export * from './components.d';
 export {
   Graph,
   GraphMeta,

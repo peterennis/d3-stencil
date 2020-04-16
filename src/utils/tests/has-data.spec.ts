@@ -1,4 +1,4 @@
-import { GraphData } from '@interfaces/index';
+import { GraphData } from '../../interfaces';
 import {
   hasDataIsNotEmpty,
   hasDataValidOnAnnotationsChart,
